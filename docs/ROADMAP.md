@@ -30,9 +30,12 @@
 - [x] `superpowers` проверен: набор скиллов, без MCP-серверов, свой SessionStart-хук.
       Объявлен в `.claude/settings.json` (D-009)
 - [x] Справка «сколько стоит инструмент» в `docs/TOOLS.md`
-- [ ] Проверить, что `superpowers` реально подхватился, и что наш SessionStart-хук
-      продолжает выводить блок «КОНТЕКСТ ПРОЕКТА»
-- [ ] Проверить `/plugin`, почему скиллы `marketing` не видны в сессии Claude Code
+- [x] Наш SessionStart-хук цел: блок «КОНТЕКСТ ПРОЕКТА» выводится в каждой сессии
+- [x] Правило отложенных проверок (D-010) — в `CLAUDE.md` и в команде `/finish`
+- [ ] `superpowers` в облачной сессии не подхватился: скиллов `superpowers:*` нет
+      в списке. Объявления в `.claude/settings.json` недостаточно — поставить через
+      `/plugin install superpowers@superpowers-marketplace`
+- [ ] Скиллы `marketing:*` в сессии Claude Code тоже не видны — выяснить через `/plugin`
 - [ ] Скиллы под проект: `/case`, `/digest` — если окажутся нужны после первого кейса
 - [ ] Playwright — на этапе 2, вместе с сайтом
 - [ ] PostgreSQL MCP — при первой отладке логов n8n в базе
